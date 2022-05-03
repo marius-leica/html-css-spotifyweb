@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap);
+@import url(utility.css);
+@import url(img.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-container {
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: gray;
+}
+
+.sidebar-icon-container {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+.sidebar-main {
+  display: flex;
+  padding: 1rem 0;
+}
+.sidebar-main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-main ul li {
+  padding: 0.5rem;
+}
+
+.add-playlist {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.add-playlist .plus {
+  background-color: gray;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  display: inline-block;
+  width: 39px;
+  font-weight: bold;
+}
+
+.sidebar-bottom-download {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: gray;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  font-weight: bolder;
+  padding-top: 20px;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: black;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.purple {
+  background-color: purple;
+}

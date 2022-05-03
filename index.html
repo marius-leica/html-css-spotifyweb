@@ -5,10 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"> -->
     <title>Spotify</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Contenitore principale -->
+    <div class="app-container d-flex flex-column red">
+        <!-- Contenitore parte sopra -->
+        <div class="flex-grow d-flex overflow-hidden yellow">
+            <!-- Sidebar -->
+            <div class="sidebar d-flex flex-column flex-shrink blue">
+                <div class="logo"><img src="img/logo.svg" alt=""></div>
+                <div class="sidebar-top">
+                    <div class="d-flex sidebar-icon-container"><img class="sidebar-icon" src="img/home.svg"
+                            alt="home icon"> <span class="sidebar-icon-label"> Home</span></div>
+                    <div class="d-flex sidebar-icon-container"><img class="sidebar-icon" src="img/search.svg"
+                            alt="search icon"> <span class="sidebar-icon-label"> Cerca</span></div>
+                    <div class="d-flex sidebar-icon-container"><img class="sidebar-icon" src="img/libreria.svg"
+                            alt="icona libreria"> <span class="sidebar-icon-label"> La mia libreria</span></div>
+                </div>
+                <div class="sidebar-main flex-grow">
+                    <div>
+                        <h4><b>Playlist</b> </h4>
+                        <div>
+                            <a class="add-playlist" href="#"><span class="plus">+</span><span>Crea Playlist</span></a>
+                        </div>
+                        <div class="playlist">
+                            <ul>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-bottom">
+                    <div class="sidebar-bottom-download">
+                        <img class="sidebar-icon-small" src="img/download.svg" alt="download-icon">
+                        <span>Install app</span>
+                    </div>
+                    <div class="user-container">
+                        <div class="user-avatar">
+                            <img class="sidebar-icon-round" src="img/profile.svg" alt="user logo"></div>
+                        <span>John Doe</span>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- Contenitore principale destra -->
+            <div class="d-flex flex-column flex-grow overflow-hidden purple ">
+                <!-- contenitore con upgrade btn -->
+                <div class="top-bar flex-shrink green p-1">
+                    <div>
+                        <a class="btn" href="#">EFFETTUA L'UPGRADE</a>
+                    </div>
+                </div>
+                <!-- contenuto in overflow -->
+                <div class="flex-grow overflow-auto">
+
+                </div>
+            </div>
+
+        </div><!-- Contenitore parte sotto -->
+        <div class="player-controls flex-shrink orange p-1"></div>
+    </div>
+    </div>
 
 </body>
 

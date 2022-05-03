@@ -1,0 +1,29 @@
+.sidebar-icon {
+  width: 20%;
+  margin-right: 10px;
+  filter: invert(0.6);
+}
+
+.sidebar-icon-small {
+  width: 10%;
+  margin-right: 10px;
+  filter: invert(0.6);
+}
+.sidebar-icon-round {
+  width: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.user-avatar {
+  background-color: gray;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 20%;
+  aspect-ratio: 1/1;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.user-container {
+}
