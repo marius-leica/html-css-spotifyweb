@@ -22,3 +22,10 @@
 .p-1 {
   padding: 1rem;
 }
+
+.btn {
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 0.5rem 2.5rem;
+  color: white;
+}

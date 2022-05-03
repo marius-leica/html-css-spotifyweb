@@ -25,5 +25,14 @@
   text-align: center;
 }
 
-.user-container {
+.logo {
+  max-width: 80%;
+}
+
+.player-img {
+  max-width: 50px;
+}
+
+.card img {
+  max-width: 100%;
 }

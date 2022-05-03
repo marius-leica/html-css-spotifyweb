@@ -14,11 +14,11 @@
 
 <body>
     <!-- Contenitore principale -->
-    <div class="app-container d-flex flex-column red">
+    <div class="app-container d-flex flex-column">
         <!-- Contenitore parte sopra -->
-        <div class="flex-grow d-flex overflow-hidden yellow">
+        <div class="flex-grow d-flex overflow-hidden">
             <!-- Sidebar -->
-            <div class="sidebar d-flex flex-column flex-shrink blue">
+            <div class="sidebar d-flex flex-column flex-shrink">
                 <div class="logo"><img src="img/logo.svg" alt=""></div>
                 <div class="sidebar-top">
                     <div class="d-flex sidebar-icon-container"><img class="sidebar-icon" src="img/home.svg"
@@ -61,21 +61,105 @@
                 </div>
             </div>
             <!-- Contenitore principale destra -->
-            <div class="d-flex flex-column flex-grow overflow-hidden purple ">
+            <div class="d-flex flex-column flex-grow overflow-hidden">
                 <!-- contenitore con upgrade btn -->
-                <div class="top-bar flex-shrink green p-1">
+                <div class="top-bar flex-shrink ">
                     <div>
                         <a class="btn" href="#">EFFETTUA L'UPGRADE</a>
                     </div>
                 </div>
                 <!-- contenuto in overflow -->
-                <div class="flex-grow overflow-auto">
+                <div class="categories-container flex-grow overflow-hiden">
+                    <div class="main-tabs">
+                        <a href="#">IN EVIDENZA</a>
+                        <a href="#">PODCAST</a>
+                        <a href="#">CLASSIFICHE</a>
+                        <a href="#">GENERI E MOOD</a>
+                        <a href="#">NUOVE USCITE</a>
+                        <a href="#">SCOPRI</a>
 
+                    </div>
+                    <div>
+                        <h2>Recently played</h2>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <h5>Heavy Metal</h5>
+                            <span>Subtitle</span>
+                        </div>
+                        <div class="card">
+                            <img src="img/stranger.jpeg" alt="">
+                            <h5>Stranger Things, Vol. 1 (a Netflix Original series SOundtrack)</h5>
+                            <span>Kyle Dixon & Michael Stein</span>
+                        </div>
+                        <div class="card">
+                            <img src="img/aquietplace.jpeg" alt="">
+                            <h5>A quiet place</h5>
+                            <span>Subtitle</span>
+                        </div>
+                        <div class="card">
+                            <img src="img/split.jpeg" alt="">
+                            <h5>Split</h5>
+                            <span>Subtitle</span>
+                        </div>
+                        <div class="card">
+                            <img src="img/cure.jpeg" alt="">
+                            <h5>A cure for wellness</h5>
+                            <span>Subtitle</span>
+                        </div>
+                        <div class="card">
+                            <img src="img/sinister.jpeg" alt="">
+                            <h5>Sinister</h5>
+                            <span>Subtitle</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div><!-- Contenitore parte sotto -->
-        <div class="player-controls flex-shrink orange p-1"></div>
+        <div class="player-controls">
+            <div class="d-flex flex-shrink">
+                <div>
+                    <img class="player-img" src="img/sinister.jpeg" alt="">
+                </div>
+                <div class="flex-grow">
+                    <h4>Sinister</h4>
+                    <span>Brano Nome</span>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-shrink flex-column">
+                <div class="d-flex">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="d-flex flex grow">
+                    <div class="flex-shrink"><span>0:25</span></div>
+                    <div class="flex-grow"><progress id="file" value="32" max="100"> 32% </progress></div>
+                    <div class="flex-shrink"><span>4:35</span></div>
+
+                </div>
+
+            </div>
+            <div class="d-flex flex-shrink">
+                <div>
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-display"></i>
+                </div>
+
+                <div>
+                    <label for="file"><i class="fa-solid fa-volume-high"></i></label>
+                    <progress id="file" value="32" max="100"> 32% </progress>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
 
