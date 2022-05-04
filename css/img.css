@@ -29,6 +29,10 @@
   max-width: 80%;
 }
 
+.logo .small {
+  display: none;
+}
+
 .player-img {
   max-width: 50px;
   vertical-align: middle;
@@ -36,4 +40,5 @@
 
 .card img {
   max-width: 100%;
+  padding-bottom: 1rem;
 }

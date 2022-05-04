@@ -10,6 +10,7 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"> -->
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
 </head>
 
 <body>
@@ -19,7 +20,9 @@
         <div class="flex-grow d-flex overflow-hidden">
             <!-- Sidebar -->
             <div class="sidebar d-flex flex-column flex-shrink">
-                <div class="logo"><img src="img/logo.svg" alt=""></div>
+                <div class="logo"><img class="large" src="img/logo.svg" alt="">
+                    <img class="small" src="img/logo-small.svg" alt="">
+                </div>
                 <div class="sidebar-top">
                     <div class="d-flex sidebar-icon-container"><img class="sidebar-icon" src="img/home.svg"
                             alt="home icon"> <span class="sidebar-icon-label"> Home</span></div>
@@ -62,7 +65,7 @@
                 </div>
             </div>
             <!-- Contenitore principale destra -->
-            <div class="d-flex flex-column flex-grow overflow-hidden">
+            <div class="d-flex flex-column flex-grow overflow-auto">
                 <!-- contenitore con upgrade btn -->
                 <div class="top-bar flex-shrink ">
                     <div>
@@ -70,66 +73,118 @@
                     </div>
                 </div>
                 <!-- contenuto in overflow -->
-                <div class="categories-container flex-grow overflow-hiden">
+                <div class="categories-container flex-grow">
                     <div class="main-tabs">
-                        <a href="#">IN EVIDENZA</a>
-                        <a href="#">PODCAST</a>
-                        <a href="#">CLASSIFICHE</a>
-                        <a href="#">GENERI E MOOD</a>
-                        <a href="#">NUOVE USCITE</a>
-                        <a href="#">SCOPRI</a>
+                        <a href="#">IN EVIDENZA
+                            <div class="underline-hover"></div>
+                        </a>
+                        <a href="#">PODCAST
+                            <div class="underline-hover"></div>
+                        </a>
+                        <a href="#">CLASSIFICHE
+                            <div class="underline-hover"></div>
+                        </a>
+                        <a href="#">GENERI E MOOD
+                            <div class="underline-hover"></div>
+                        </a>
+                        <a href="#">NUOVE USCITE
+                            <div class="underline-hover"></div>
+                        </a>
+                        <a href="#">SCOPRI
+                            <div class="underline-hover"></div>
+                        </a>
 
                     </div>
-                    <div class="pb-15">
-                        <h2>Recently played</h2>
-                    </div>
-                    <div class="card-container">
-                        <div class="card">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <h5>Heavy Metal</h5>
-                            <span>Subtitle</span>
+                    <div>
+                        <div class="pb-15">
+                            <h2>Recently played</h2>
                         </div>
-                        <div class="card">
-                            <img src="img/stranger.jpeg" alt="">
-                            <h5>Stranger Things, Vol. 1 (a Netflix Original series SOundtrack)</h5>
-                            <span>Kyle Dixon & Michael Stein</span>
+                        <div class="card-container">
+                            <div class="card">
+                                <div>
+                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <i class="fa-regular fa-circle-play text-25"></i>
+                                </div>
+                                <h5>Heavy Metal</h5>
+                                <span>Subtitle</span>
+                            </div>
+                            <div class="card">
+                                <div>
+                                    <img src="img/stranger.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play text-25"></i></div>
+                                <h5>Stranger Things, Vol. 1 (a Netflix Original series SOundtrack)</h5>
+                                <span>Kyle Dixon & Michael Stein</span>
+                            </div>
+                            <div class="card">
+                                <div>
+                                    <img src="img/aquietplace.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play text-25"></i></div>
+                                <h5>A quiet place</h5>
+                                <span>Subtitle</span>
+                            </div>
+                            <div class="card">
+                                <div>
+                                    <img src="img/split.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play text-25"></i></div>
+                                <h5>Split</h5>
+                                <span>Subtitle</span>
+                            </div>
+                            <div class="card">
+                                <div>
+                                    <img src="img/cure.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play text-25"></i></div>
+                                <h5>A cure for wellness</h5>
+                                <span>Subtitle</span>
+                            </div>
+                            <div class="card">
+                                <div>
+                                    <img src="img/sinister.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play text-25"></i></div>
+                                <h5>Sinister</h5>
+                                <span>Subtitle</span>
+                            </div>
                         </div>
-                        <div class="card">
-                            <img src="img/aquietplace.jpeg" alt="">
-                            <h5>A quiet place</h5>
-                            <span>Subtitle</span>
+                        <div class="pb-15">
+                            <h2 class="pb-05">Creato per John Doe</h2>
+                            <p class="text-small color-gray">Più ascolti, più accutati saranno i sugerimenti.</p>
                         </div>
-                        <div class="card">
-                            <img src="img/split.jpeg" alt="">
-                            <h5>Split</h5>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="card">
-                            <img src="img/cure.jpeg" alt="">
-                            <h5>A cure for wellness</h5>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="card">
-                            <img src="img/sinister.jpeg" alt="">
-                            <h5>Sinister</h5>
-                            <span>Subtitle</span>
-                        </div>
-                    </div>
-                    <div class="pb-15">
-                        <h2>Creato per John Doe</h2>
-                        <p>Più ascolti, più accutati saranno i sugerimenti.</p>
-                    </div>
-                    <div class="card-container">
-                        <div class="card">
-                            <img src="img/radar.jpeg" alt="">
-                            <h5>Release Radar</h5>
-                        </div>
-                        <div class="card">
-                            <img src="img/mixdaily.jpeg" alt="">
-                            <h5>Daily Mix 1</h5>
-                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <div>
+                                    <img src="img/radar.jpeg" alt=""><i class="fa-regular fa-circle-play text-25"></i>
+                                </div>
+                                <h5>Release Radar</h5>
+                            </div>
+                            <div class="card">
+                                <div>
+                                    <img src="img/mixdaily.jpeg" alt=""><i
+                                        class="fa-regular fa-circle-play text-25"></i>
+                                </div>
+                                <h5>Daily Mix 1</h5>
+                            </div>
 
 
+                        </div>
+                        <div class="pb-15">
+                            <h2 class="pb-05">Artisti più popolari</h2>
+                            <p class="text-small color-gray">Più ascolti, più accutati saranno i sugerimenti.</p>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <div>
+                                    <img src="img/youg.jpeg" alt=""><i class="fa-regular fa-circle-play text-25"></i>
+                                </div>
+                                <h5>Luna del Rey</h5>
+                            </div>
+                            <div class="card">
+                                <div>
+                                    <img src="img/einaudi.jpeg" alt=""><i class="fa-regular fa-circle-play text-25"></i>
+                                </div>
+                                <h5>Ludovico Einaudi</h5>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
