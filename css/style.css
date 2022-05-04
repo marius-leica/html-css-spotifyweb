@@ -37,6 +37,7 @@ a {
   display: flex;
   align-items: center;
   color: gray;
+  margin-bottom: 10px;
 }
 .sidebar-top {
   padding-top: 1rem;
@@ -44,7 +45,9 @@ a {
 .sidebar-main {
   display: flex;
   padding: 1rem 0;
-  overflow: auto;
+  overflow: hidden;
+  flex-grow: 1;
+  flex-direction: column;
 }
 .sidebar-main ul {
   list-style: none;
@@ -53,6 +56,7 @@ a {
 
 .sidebar-main ul li {
   padding: 0.5rem;
+  padding-left: 0;
 }
 
 .add-playlist {
@@ -69,6 +73,11 @@ a {
   display: inline-block;
   width: 39px;
   font-weight: bold;
+}
+.playlist {
+  display: flex;
+  flex-grow: 1;
+  overflow: auto;
 }
 
 .sidebar-bottom-download {
@@ -96,30 +105,117 @@ a {
   padding: 2rem 0.5rem;
 }
 
-.player-controls {
+.player {
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(40, 40, 40);
-  padding: 1rem 0.5rem;
+  padding: 1rem 0rem;
   flex-shrink: 0;
   flex-grow: 1;
 }
 
+.player-control {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  max-width: 400px;
+}
+.player-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  gap: 1.2rem;
+}
 .categories-container {
   background-color: rgb(20, 25, 34);
   color: white;
+  padding: 1rem;
 }
 
 .main-tabs {
   text-align: center;
+  color: gray;
+  padding-bottom: 2.5rem;
 }
 .main-tabs a {
   padding: 0 0.5rem;
 }
 
 .card {
-  width: calc(100% / 6);
+  width: calc(100% / 6 - 0.5rem);
   min-width: 150px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.player-left-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-width: 250px;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.player i {
+  padding-left: 0.5rem;
+}
+
+.player-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 250px;
+  min-width: 159px;
+  padding-right: 0.5rem;
+  padding-left: 1rem;
+}
+
+.volume {
+  height: 3px;
+  background-color: gray;
+  margin-left: 0.5rem;
+  border-radius: 25px;
+  min-width: 20px;
+}
+
+.volume-percentage {
+  width: 30%;
+  background-color: white;
+  height: 3px;
+  border-radius: 25px;
+}
+.track-timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.track-timer {
+  height: 3px;
+  background-color: gray;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  border-radius: 25px;
+  flex-grow: 1;
+}
+
+.track-timer-bar {
+  width: 30%;
+  background-color: white;
+  height: 3px;
+  border-radius: 25px;
 }

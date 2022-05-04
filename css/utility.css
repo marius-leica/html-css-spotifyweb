@@ -23,9 +23,37 @@
   padding: 1rem;
 }
 
+.pl-05 {
+  padding-left: 0.5rem;
+}
+
+.pb-15 {
+  padding-bottom: 1.5rem;
+}
+
 .btn {
   border: 1px solid white;
   border-radius: 25px;
   padding: 0.5rem 2.5rem;
   color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-gray {
+  color: gray;
+}
+
+.text-11 {
+  font-size: 1.1rem;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-25 {
+  font-size: 2.5rem;
 }
