@@ -20,46 +20,69 @@
         <div class="flex-grow d-flex overflow-hidden">
             <!-- Sidebar -->
             <div class="sidebar d-flex flex-column flex-shrink">
-                <div class="logo"><img class="large" src="img/logo.svg" alt="">
-                    <img class="small" src="img/logo-small.svg" alt="">
+                <div>
+                    <div class="logo">
+                        <a href="#"><img class="large" src="img/logo.svg" alt=""></a>
+                        <a href="#"><img class="small" src="img/logo-small.svg" alt=""></a>
+
+                    </div>
+                    <div class="sidebar-top">
+                        <div class="d-flex sidebar-icon-container glow-container">
+
+                            <a class="flex-center" href="#">
+                                <div class="left-bar">
+                                </div><img class="sidebar-icon glow" src="img/home.svg" alt="home icon"> <span
+                                    class="d-none glow"> Home</span>
+                            </a>
+                        </div>
+                        <div class="d-flex sidebar-icon-container glow-container">
+                            <a class="flex-center" href="#">
+                                <div class="left-bar"></div>
+                                <img class="sidebar-icon glow" src="img/search.svg" alt="search icon">
+                                <span class="d-none glow"> Cerca</span>
+                            </a>
+                        </div>
+                        <div class="d-flex sidebar-icon-container glow-container">
+                            <a class="flex-center" href="#">
+                                <div class="left-bar"></div>
+                                <img class="sidebar-icon glow" src="img/libreria.svg" alt="icona libreria"> <span
+                                    class="d-none glow"> La mia libreria</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="sidebar-top">
-                    <div class="d-flex sidebar-icon-container"><img class="sidebar-icon" src="img/home.svg"
-                            alt="home icon"> <span class="sidebar-icon-label"> Home</span></div>
-                    <div class="d-flex sidebar-icon-container"><img class="sidebar-icon" src="img/search.svg"
-                            alt="search icon"> <span class="sidebar-icon-label"> Cerca</span></div>
-                    <div class="d-flex sidebar-icon-container"><img class="sidebar-icon" src="img/libreria.svg"
-                            alt="icona libreria"> <span class="sidebar-icon-label"> La mia libreria</span></div>
-                </div>
-                <div class="sidebar-main">
+                <div class="sidebar-main d-none">
                     <div class="sidebar-main-top">
                         <h4 class="color-white"><b>PLAYLIST</b> </h4>
-                        <div>
-                            <a class="add-playlist" href="#"><span class="plus">+</span><span class="text-11">Crea
+                        <div class="glow-container">
+                            <a class="add-playlist glow" href="#"><span class="plus ">+</span><span
+                                    class="text-11 glow">Crea
                                     Playlist</span></a>
                         </div>
                     </div>
                     <div class="playlist">
                         <ul>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
+                            <li><a class="glow" href="#">Nome Playlist</a></li>
+                            <li><a class="glow" href="#">Nome Playlist</a></li>
+                            <li><a class="glow" href="#">Nome Playlist</a></li>
+                            <li><a class="glow" href="#">Nome Playlist</a></li>
+                            <li><a class="glow" href="#">Nome Playlist</a></li>
+                            <li><a class="glow" href="#">Nome Playlist</a></li>
+                            <li><a class="glow" href="#">Nome Playlist</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="sidebar-bottom">
-                    <div class="sidebar-bottom-download">
-                        <img class="sidebar-icon-small" src="img/download.svg" alt="download-icon">
-                        <span>Install app</span>
+                    <div class="sidebar-bottom-download glow-container">
+                        <a class="flex-center glow" href="#">
+                            <img class="sidebar-icon-small glow" src="img/download.svg" alt="download-icon">
+                            <span class="d-none glow">Install app</span></a>
                     </div>
                     <div class="user-container">
                         <div class="user-avatar">
-                            <img class="sidebar-icon-round" src="img/profile.svg" alt="user logo"></div>
-                        <span>John Doe</span>
+                            <a class="flex-center" href="#">
+                                <img class="sidebar-icon-round" src="img/profile.svg" alt="user logo"></div>
+                        <span class="d-none">John Doe</span></a>
                     </div>
                     <div></div>
                 </div>
@@ -68,29 +91,29 @@
             <div class="d-flex flex-column flex-grow overflow-auto">
                 <!-- contenitore con upgrade btn -->
                 <div class="top-bar flex-shrink ">
-                    <div>
+                    <div class=" scale">
                         <a class="btn" href="#">EFFETTUA L'UPGRADE</a>
                     </div>
                 </div>
                 <!-- contenuto in overflow -->
                 <div class="categories-container flex-grow">
                     <div class="main-tabs">
-                        <a href="#">IN EVIDENZA
+                        <a class="glow" autofocus href="#">IN EVIDENZA
                             <div class="underline-hover"></div>
                         </a>
-                        <a href="#">PODCAST
+                        <a class="glow" href="#">PODCAST
                             <div class="underline-hover"></div>
                         </a>
-                        <a href="#">CLASSIFICHE
+                        <a class="glow" href="#">CLASSIFICHE
                             <div class="underline-hover"></div>
                         </a>
-                        <a href="#">GENERI E MOOD
+                        <a class="glow" href="#">GENERI E MOOD
                             <div class="underline-hover"></div>
                         </a>
-                        <a href="#">NUOVE USCITE
+                        <a class="glow" href="#">NUOVE USCITE
                             <div class="underline-hover"></div>
                         </a>
-                        <a href="#">SCOPRI
+                        <a class="glow" href="#">SCOPRI
                             <div class="underline-hover"></div>
                         </a>
 
@@ -171,13 +194,13 @@
                         </div>
                         <div class="card-container">
                             <div class="card">
-                                <div>
+                                <div class="circle">
                                     <img src="img/youg.jpeg" alt=""><i class="fa-regular fa-circle-play text-25"></i>
                                 </div>
                                 <h5>Luna del Rey</h5>
                             </div>
                             <div class="card">
-                                <div>
+                                <div class="circle">
                                     <img src="img/einaudi.jpeg" alt=""><i class="fa-regular fa-circle-play text-25"></i>
                                 </div>
                                 <h5>Ludovico Einaudi</h5>
@@ -192,30 +215,35 @@
         </div><!-- Contenitore parte sotto -->
         <div class="player">
             <div class="player-left-container">
-                <div>
-                    <img class="player-img" src="img/sinister.jpeg" alt="">
+                <div class="d-flex">
+                    <div class="d-none-mobile">
+                        <img class="player-img" src="img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="flex-grow pl-05">
+                        <h4>Sinister</h4>
+
+                        <span class="underline text-small color-gray">Brano Nome</span>
+                    </div>
                 </div>
-                <div class="flex-grow pl-05">
-                    <h4>Sinister</h4>
-                    <span class="text-small color-gray">Brano Nome</span>
-                </div>
-                <div>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                <div class="bottom-glow d-none-mobile flex-center">
+                    <a class="flex-center" href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a class="flex-center" href="#"><i class="fa-regular fa-folder"></i></a>
+
+
                 </div>
             </div>
             <div class="player-control">
                 <div class="player-btns">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-regular fa-circle-play text-25"></i>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-rotate-right"></i>
+                    <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                    <a href="#"><i class="scale fa-regular fa-circle-play text-25"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
                 </div>
                 <div class="track-timer-container">
                     <div class="flex-shrink"><span class="text-small">0:25</span></div>
                     <div class="track-timer">
-                        <div class="track-timer-bar"></div>
+                        <div class="track-timer-bar"><i class="fa-solid fa-circle"></i></div>
                     </div>
                     <div class="flex-shrink"><span class="text-small">4:35</span></div>
 
@@ -223,14 +251,20 @@
 
             </div>
             <div class="player-right-container">
-                <div>
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-solid fa-display"></i><i class="fa-solid fa-volume-high"></i>
+                <div class="bottom-glow">
+                    <a href="#"><i class="fa-solid fa-list"></i></a>
+                    <a href="#"><i class="fa-solid fa-display"></i></a>
+
                 </div>
 
-                <div class="flex-grow">
-                    <div class="volume">
-                        <div class="volume-percentage"></div>
+                <div class="flex-grow d-none-mobile bottom-glow flex-center">
+                    <a href="#">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </a>
+                    <div class="volume flex-grow">
+                        <div class="volume-percentage">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
                     </div>
                 </div>
             </div>
